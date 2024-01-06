@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header nav ul li a {
+  color: gray !important;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#essence {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://scontent.fgyd23-1.fna.fbcdn.net/v/t39.30808-6/304779502_203858208665662_5797745238588823509_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=k2CdNMZnCfoAX9tLG_W&_nc_ht=scontent.fgyd23-1.fna&oh=00_AfBKT2e1PuUqVLOJKkAAWHAkxNDmL4Pmnpk-kOIKGUgXrw&oe=659CC7A3");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#essence .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem {
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem h6 {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(76, 75, 75);
+}
+#essence .container .essenceitem h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.3;
+}
+#essence .container .essenceitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: auto;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #0315FF;
+  color: #F3F3F3;
+  font-weight: 700;
+  cursor: pointer;
+}
+#essence .container .essenceitem button:hover {
+  background-color: #D1002C;
+}
+
+@media screen and (max-width: 320px) {
+  #essence .container .essenceitem h1 {
+    font-size: 15px;
+  }
+  #essence .container .essenceitem button {
+    width: 80px;
+    font-size: 10px;
+  }
+}
+#clothes {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clothes .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#clothes .container .clothesitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#clothes .container .clothesitem img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+#clothes .container .clothesitem .text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clothes .container .clothesitem .text h5 {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#clothes .container .clothesitem .text h5:hover {
+  color: #0315FF;
+}
+
+#sale {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sale .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/essence/img/bg-img/bg-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sale .container .saleitem {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: justify;
+}
+#sale .container .saleitem h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #D1002C;
+  font-weight: 700;
+}
+#sale .container .saleitem h1 {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+#sale .container .saleitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: auto;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #0315FF;
+  color: #F3F3F3;
+  font-weight: 700;
+  cursor: pointer;
+}
+#sale .container .saleitem button:hover {
+  background-color: #D1002C;
+}
+
+#ApiProducts {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+#ApiProducts .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 900;
+}
+#ApiProducts .container #productList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px;
+}
+#ApiProducts .container #productList .boxDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 5px;
+}
+#ApiProducts .container #productList .boxDiv img {
+  width: 100%;
+  height: auto;
+}
+#ApiProducts .container #productList .boxDiv .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D1002C;
+}
+#ApiProducts .container #productList .boxDiv button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #D1002C;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv button:hover {
+  background-color: #252525;
+  cursor: pointer;
+}
+#ApiProducts .container #pagi {
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 5px;
+}
+#ApiProducts .container #pagi:hover {
+  background-color: #D1002C;
+}
+
+#shop {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+#shop .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#shop .container .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#shop .container .img img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #F3F3F3;
+}
+footer .container .foot i {
+  color: #F3F3F3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header nav ul li a {
+  color: gray !important;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#essence {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://scontent.fgyd23-1.fna.fbcdn.net/v/t39.30808-6/304779502_203858208665662_5797745238588823509_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=k2CdNMZnCfoAX9tLG_W&_nc_ht=scontent.fgyd23-1.fna&oh=00_AfBKT2e1PuUqVLOJKkAAWHAkxNDmL4Pmnpk-kOIKGUgXrw&oe=659CC7A3");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#essence .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem {
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem h6 {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(76, 75, 75);
+}
+#essence .container .essenceitem h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.3;
+}
+#essence .container .essenceitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: auto;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #0315FF;
+  color: #F3F3F3;
+  font-weight: 700;
+  cursor: pointer;
+}
+#essence .container .essenceitem button:hover {
+  background-color: #D1002C;
+}
+
+@media screen and (max-width: 320px) {
+  #essence .container .essenceitem h1 {
+    font-size: 15px;
+  }
+  #essence .container .essenceitem button {
+    width: 80px;
+    font-size: 10px;
+  }
+}
+#Productfiltered {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F3F3F3;
+}
+#Productfiltered .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Product {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F3F3F3;
+}
+#Product .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Product .container #products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}
+#Product .container #products .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+#Product .container #products .box img {
+  width: 100%;
+  height: auto;
+}
+#Product .container #products .box .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#Product .container #products .box .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D1002C;
+}
+#Product .container #products .box button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #D1002C;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#Product .container #products .box button:hover {
+  background-color: #252525;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #F3F3F3;
+}
+footer .container .foot i {
+  color: #F3F3F3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header nav ul li a {
+  color: gray !important;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#essence {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://scontent.fgyd23-1.fna.fbcdn.net/v/t39.30808-6/304779502_203858208665662_5797745238588823509_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=k2CdNMZnCfoAX9tLG_W&_nc_ht=scontent.fgyd23-1.fna&oh=00_AfBKT2e1PuUqVLOJKkAAWHAkxNDmL4Pmnpk-kOIKGUgXrw&oe=659CC7A3");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#essence .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem {
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#essence .container .essenceitem h6 {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(76, 75, 75);
+}
+#essence .container .essenceitem h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.3;
+}
+#essence .container .essenceitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: auto;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #0315FF;
+  color: #F3F3F3;
+  font-weight: 700;
+  cursor: pointer;
+}
+#essence .container .essenceitem button:hover {
+  background-color: #D1002C;
+}
+
+@media screen and (max-width: 320px) {
+  #essence .container .essenceitem h1 {
+    font-size: 15px;
+  }
+  #essence .container .essenceitem button {
+    width: 80px;
+    font-size: 10px;
+  }
+}
+#FormMethod {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: #F7F8F1;
+  background-position: center;
+  background-size: cover;
+}
+#FormMethod .container {
+  margin-top: 20px;
+}
+#FormMethod .container p {
+  font-size: large;
+  font-weight: 700;
+}
+#FormMethod .container label {
+  color: black;
+}
+#FormMethod .container input {
+  border: 2px solid black;
+}
+
+#displayCard .container #display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#displayCard .container #display .box {
+  width: 250px;
+  padding: 25px;
+  background-color: #F3F3F3;
+  box-shadow: 0 1px 10px #252525;
+}
+#displayCard .container #display .box span {
+  font-weight: 500;
+  font-size: 18px;
+}
+#displayCard .container #display .box button {
+  color: #fff;
+  background-color: #D1002C;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+#displayCard .container #display .box button:hover {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+footer .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: #F3F3F3;
+}
+footer .container .foot i {
+  color: #F3F3F3;
+}

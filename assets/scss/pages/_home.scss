@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+nav{
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       cursor: pointer;
+    }
+    ul{
+        li{
+            a{
+                color: $text-color !important;
+                font-size: 17px;
+                font-weight: 700;
+                font-family: "Ubuntu", sans-serif; 
+            }
+        }
+    }
+}
+}
+#essence{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-image: url('https://scontent.fgyd23-1.fna.fbcdn.net/v/t39.30808-6/304779502_203858208665662_5797745238588823509_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=k2CdNMZnCfoAX9tLG_W&_nc_ht=scontent.fgyd23-1.fna&oh=00_AfBKT2e1PuUqVLOJKkAAWHAkxNDmL4Pmnpk-kOIKGUgXrw&oe=659CC7A3');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .essenceitem{
+        display: flex;
+        justify-content: flex-start;
+        text-align: justify;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       h6{
+        font-size: 23px;
+        font-weight: 700;
+        color: rgb(76, 75, 75);
+       }
+       h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "Ubuntu", sans-serif;
+        line-height: 1.3;
+       }
+       button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 170px;
+        height: auto;
+        border: none;
+        padding: 10px;
+        font-size: 13px;
+        background-color: $end-color;
+        color: $bg-color;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+            background-color: $main-color;
+        }
+       }
+    }
+}
+}
+@media screen and (max-width: 320px) {
+    #essence {
+        .container {
+            .essenceitem {
+                h1 {
+                    font-size: 15px;
+                }
+                button{
+                    width: 80px;
+                    font-size: 10px;
+                }
+               
+            }
+        }
+    }
+}
+
+#clothes{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .clothesitem{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                opacity: 0.5;
+            }
+            .text{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    &:hover{
+                        color: $end-color;
+                    }
+                }
+            }
+        }
+    }
+}
+#sale{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   .container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://preview.colorlib.com/theme/essence/img/bg-img/bg-5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .saleitem{
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: justify;
+        h6{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: $main-color;
+            font-weight: 700;
+        }
+        h1{
+            font-size: 30px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 170px;
+            height: auto;
+            border: none;
+            padding: 10px;
+            font-size: 13px;
+            background-color: $end-color;
+            color: $bg-color;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+    }
+   }
+   
+}
+#ApiProducts{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$bg-color;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .ApiProductsHeader{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            h1{
+                margin-top: 20px;
+        margin-bottom: 20px;
+         font-size: 35px;
+         text-transform: uppercase;
+         line-height: 1.1;
+         font-weight: 900;
+            }
+
+        }
+        #productList{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 10px;
+            .boxDiv{
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                padding: 5px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .title{
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+                .price{
+                    font-size: 20px;
+                    font-weight: 600; 
+                    color: $main-color;
+                }
+                button{
+                    margin-top: 20px;
+                    margin-bottom: 20px; 
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    background-color: $main-color;
+                    color: $main-second-color;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    &:hover{
+                        background-color: $bg-second-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        #pagi{
+            margin-top: 20px;
+            width: 160px;
+            height: 40px;
+            border: none;
+            background-color:$bg-second-color;
+            color: $main-second-color;
+            border-radius:5px ;
+            &:hover{
+                background-color:$main-color;
+            }
+        }
+    }
+}
+#shop{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: $bg-color;
+    
+    .container{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+      }
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-second-color;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .foot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: $bg-color;
+            }
+            i{
+                color: $bg-color;
+            }
+        }
+    }
+}
